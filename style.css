@@ -1,0 +1,70 @@
+/* Webfonts */
+@font-face {
+    font-family: 'Reborn';
+    src: url('./assets/fonts/reborn/Reborn.eot'); 
+    src: url('./assets/fonts/reborn/Reborn.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/reborn/Reborn.woff') format('woff'), 
+         url('./assets/fonts/reborn/Reborn.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HeroLight';
+    src: url('./assets/fonts/hero/Hero-Light.eot');
+    src: url('./assets/fonts/hero/Hero-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/hero/Hero-Light.woff2') format('woff2'),
+        url('./assets/fonts/hero/Hero-Light.woff') format('woff'),
+        url('./assets/fonts/hero/Hero-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('./assets/fonts/hero/Hero-Regular.eot');
+    src: url('./assets/fonts/hero/Hero-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/hero/Hero-Regular.woff2') format('woff2'),
+        url('./assets/fonts/hero/Hero-Regular.woff') format('woff'),
+        url('./assets/fonts/hero/Hero-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeroBold';
+    src: url('./assets/fonts/hero/Hero-Bold.eot');
+    src: url('./assets/fonts/hero/Hero-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/hero/Hero-Bold.woff2') format('woff2'),
+        url('./assets/fonts/hero/Hero-Bold.woff') format('woff'),
+        url('./assets/fonts/hero/Hero-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --cream: #F1EBE5;
+    --olive-green: #5F634F;
+    /* black */
+    --mustard: #FFBE4D;
+}
+
+body {
+    background-color: var(--olive-green);
+    color: var(--cream);
+    font-family: 'HeroLight', sans-serif;
+}
+
+.nav-header, h1 {
+    font-family: 'Reborn', sans-serif;
+}
+
+.portfolio-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cream);
+    text-decoration: none;
+}
