@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jeanne Ferrer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="./index.html"><img src="assets/images/logo.png" alt="Logo on header" class="nav-logo"></a>
+            <a href="./index.html" class="nav-heading">Jeanne Ferrer</a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about-me-page.html">About Me</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Photography</a></li>
+                </ul>
+            </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed" class="menu-icon" onclick="toggleMenu()">
+                <path d="M4 6h16M4 12h16M4 18h16" stroke="#e8eaed" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main content for About Me page goes here -->
+    </main>
+
+    <footer>
+        <p class="footer-credit">&copy; Jeanne Ferrer, 2024</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+      }
+
+      window.addEventListener('resize', () => {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+
+        if (window.innerWidth > 768) {
+          navLinks.style.display = 'flex';
+        } else {
+          navLinks.style.display = 'none';
+        }
+      });
+    </script>
+</body>
+</html>
