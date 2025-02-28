@@ -60,5 +60,23 @@
         <footer>
             <p class="footer-credit">&copy; Jeanne Ferrer, 2024</p>
         </footer>
+
+        <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            }
+      
+            window.addEventListener('resize', () => {
+              const navLinks = document.querySelector('.nav-links');
+              const menuIcon = document.querySelector('.menu-icon');
+      
+              if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+              } else {
+                navLinks.style.display = 'none';
+              }
+            });
+          </script>
     </body>
 </html>

@@ -192,6 +192,7 @@ footer {
   width: 350px;
   padding: 1em 0;
   border: 1px solid black;
+  transition: 0.5s ease;
 }
 
 .portfolio-link:hover {
@@ -325,15 +326,30 @@ footer {
     flex-direction: column;
     background-color: var(--olive-green);
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 0;
     width: 100%;
     text-align: center;
     padding: 1em 0;
+    margin-right: 0;
+    border: 1px solid var(--dark-olive);
   }
 
   .nav-links a {
     padding: 1em;
+  }
+
+  .nav-links a:hover {
+    color: var(--cream);
+  }
+
+  .nav-links li {
+    transition: background-color 0.5s ease;
+  }
+
+  .nav-links li:hover {
+      background-color: var(--dark-olive);
+      transition: background-color 0.5s ease;
   }
 
   .menu-icon {
