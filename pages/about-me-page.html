@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jeanne Ferrer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo on header" class="nav-logo"></a>
+            <a href="../index.html" class="nav-heading">Jeanne Ferrer</a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about-me-page.html">About Me</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="https://www.instagram.com/takenbyadi">Photography</a></li>
+                </ul>
+            </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e8eaed" class="menu-icon" onclick="toggleMenu()">
+                <path d="M4 6h16M4 12h16M4 18h16" stroke="#e8eaed" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+      <section>
+        <img src="" alt="Jeanne Ferrer picture">
+        <div>
+          <h1>About Me</h1>
+          <article class="about-me-article">
+            <h2>Who I am:</h2>
+            <p>I am a 23 year old BSCS student in my graduating year at the University of the Cordilleras, Baguio City, Philippines. 
+              With a broad interest in various tech fields, I am continually exploring paths that resonate with me. 
+              My interests currently lie in full stack development and AI/ML.</p>
+          </article>
+          <article class="about-me-article">
+            <h2>Hobbies & Interests:</h2>
+            <p>Outside of academics, I immerse myself in:</p>
+            <ul>
+              <li>Playing Roblox and Minecraft</li>
+              <li>Cooking and baking</li>
+              <li>Watching anime</li>
+              <li>Traveling - I’ve been to Malaysia, Singapore, New Zealand, and Canada</li>
+              <li>Dancing, specifically in Latin ballroom, hip hop, and K-pop</li>
+              <li>Photography is another creative outlet I enjoy</li>
+              <li>I love pets, though I don’t currently have any</li>
+            </ul>
+          </article>
+          <article class="about-me-article">
+            <h2>What I Value:</h2>
+            <p>I aspire to find a balance between work and life, create meaningful and fun connections, and travel the world to experience new cultures.</p>
+          </article>
+          <article class="about-me-article">
+            <h2>Personality:</h2>
+            <p>Friends describe me as hard-working and book smart. 
+              Despite being an introvert, I have a natural ability to lead and connect with others when needed. 
+              Additionally, according to the <a href="https://www.16personalities.com/">Myers-Briggs</a> personality test, I am an INFJ-T (Advocate).</p>
+          </article>
+        </div>
+      </section>
+      <section>
+        
+      </section>
+    </main>
+
+    <footer>
+        <p class="footer-credit">&copy; Jeanne Ferrer, 2024</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+      }
+
+      window.addEventListener('resize', () => {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+
+        if (window.innerWidth > 768) {
+          navLinks.style.display = 'flex';
+        } else {
+          navLinks.style.display = 'none';
+        }
+      });
+    </script>
+</body>
+</html>
+

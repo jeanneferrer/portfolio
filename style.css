@@ -47,8 +47,9 @@ header {
   align-items: center;
   top: 0;
   line-height: 50px;
-  
   padding-top: 1em;
+  background-color: var(--olive-green);
+  z-index: 1000;
 }
 
 .header-logo {
@@ -115,9 +116,8 @@ footer {
   line-height: 50px;
   bottom: 0;
   position: fixed;
-
-
   padding-bottom: 1em;
+  background-color: var(--olive-green);
 }
 
 .footer-credit {
@@ -129,9 +129,12 @@ footer {
   display: flex;
   gap: 100px;
   width: 70%;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
 }
 
 #welcome-hero-left {
@@ -207,12 +210,94 @@ footer {
   height: 30px;
 }
 
+/* About Me Page  */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 70%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Projects Page */
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 70%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.project-card {
+  width: 30%;
+  padding: 50px;
+  background-color: var(--cream);
+  border: 3px solid var(--dark-olive);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.8s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 10px 10px var(--dark-olive);
+  transition: box-shadow 0.8s ease-in-out;
+}
+
+.project-card > h2 {
+  text-align: center;
+}
+
+.project-link {
+  color: black;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: var(--honey-orange);
+  text-decoration: underline;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid var(--dark-olive);
+}
+
+.project-card p {
+  color: var(--dark-olive);
+  text-align: left;
+}
+
+.project-card p:nth-of-type(2) {
+  text-align: center;
+}
+
+.project-card .project-repo {
+  color: var(--dark-olive);
+}
+
+.project-card .project-repo:hover {
+  color: var(--honey-orange);
+}
+
 @media (max-width: 1024px) {
-  #welcome-hero {
+  #welcome-hero, #projects {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
   }
 
   #welcome-hero-right {
@@ -221,6 +306,14 @@ footer {
   }
 
   .portfolio-link {
+    width: 100%;
+  }
+
+  #projects {
+    flex-wrap: nowrap;
+  }
+
+  .project-card {
     width: 100%;
   }
 }
@@ -245,6 +338,10 @@ footer {
 
   .menu-icon {
     display: block;
+  }
+
+  .project-card img {
+    height: 150px;
   }
 }
 
