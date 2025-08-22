@@ -4,4 +4,4 @@ This will contain the content and layout of my portfolio.
 
 Notes: 
 - Categorize projects 
-- Add thesis project 
+- Add thesis project
