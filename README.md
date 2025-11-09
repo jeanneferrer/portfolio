@@ -4,17 +4,16 @@ This will contain the content and layout of my portfolio.
 
 ## To Do  
 ### Landing (Refactoring everything)
-- Put everything in one page (each section are heroes)
+- Put everything in one page (each section are heroes or put them in tabs)
 - Make nav bar link to each hero section
 ### About Me (ADD)
 - Outline myself lol
 ### Projects
-- Categorize projects (optional)
+- Categorize projects
+- Add school projects like mobile app and mini game
 - Brief description + technologies used
-- Add thesis project (still to do, improve UI)
-- (for future) Add Luxe Mercantile website project
 ### Photography
-- Add grid/scrollable
+- Add grid/scrollable of best pics
 ### Events
 - Add timeline (???)
 - Links for reference:
@@ -29,3 +28,6 @@ This will contain the content and layout of my portfolio.
     - https://www.facebook.com/media/set/?set=a.1389805036487629&type=3
 ### Footer 
 - Add socials
+
+## Other Notes
+- CloudFlare
