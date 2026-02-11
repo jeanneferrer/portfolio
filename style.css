@@ -43,12 +43,12 @@ header {
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   top: 0;
   line-height: 50px;
   padding-top: 1em;
-  border-bottom: var(--dark-olive) 2px solid;
+  /* border-bottom: var(--dark-olive) 2px solid; */
   background-color: var(--olive-green);
   z-index: 1000;
 }
@@ -118,12 +118,20 @@ footer {
   bottom: 0;
   position: fixed;
   padding-bottom: 1em;
-  border-top: var(--dark-olive) 2px solid;
+  /* border-top: var(--dark-olive) 2px solid; */
   background-color: var(--olive-green);
 }
 
 .footer-credit {
   text-transform: uppercase;
+}
+
+.footer-credit a {
+  color: var(--cream);
+}
+
+.footer-credit a:hover {
+  color: var(--honey-orange);
 }
 
 /* Welcome Hero Section for index.html */
